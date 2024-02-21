@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#9ee0fa" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="#ebeffa">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="8dp" />
+                    <solid android:color="#6ab5ef" />
+                </shape>hrtestwin@gmail.com
+            </item>
+        </ripple>
+    </item>
+</selector>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".ComplainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_complain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_complain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Register Complain"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar_complain"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="100sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/upload_image_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="55sp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10sp"
+                    android:fontFamily="@font/roboo"
+                    android:text="Image/Video upload"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:layout_margin="30sp"
+                    android:visibility="gone" />
+
+                <VideoView
+                    android:id="@+id/video_complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_complain"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60sp"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/desc_complain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="30sp"
+                android:background="@drawable/round"
+                android:hint="Enter your complain  briefly"
+                android:padding="20sp"
+                android:textAlignment="textStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/state_complain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round"
+                        android:hint="State"
+                        android:padding="10sp"
+                        android:textAlignment="textStart" />
+
+                    <EditText
+                        android:id="@+id/region_complain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round"
+                        android:hint="Region"
+                        android:padding="10sp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/address_complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="2"
+                    android:background="@drawable/round"
+                    android:hint="Your address"
+                    android:padding="15sp"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_complain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="50sp"
+                android:background="@drawable/buttons"
+                android:text="Submit"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

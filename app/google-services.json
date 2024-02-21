@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547976976010",
+    "project_id": "road--accident",
+    "storage_bucket": "road--accident.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547976976010:android:a0302990496afeceb4bf73",
+        "android_client_info": {
+          "package_name": "com.example.road_safety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGItr2XcBqXhKCEs7nfdywzyjtaygRIvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
